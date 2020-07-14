@@ -1,0 +1,26 @@
+.p-header {
+    height: 217px;
+    background-color: #FFF7EF;
+    display: flex;
+    justify-content: space-between;
+    &__left h1{
+        font-size: 4rem;
+        color: #707070;
+        line-height: 217px;
+        margin-left: 65px;
+    }
+    &__right {
+        padding-right: 30px;
+        margin: auto 0;
+        &__text {
+            width: 396px;
+            height: 46px;
+            border-radius: 10px;
+        }
+        &__btn {
+            width: 136px;
+            height: 46px;
+            border-radius: 10px;
+        }
+    }
+}
