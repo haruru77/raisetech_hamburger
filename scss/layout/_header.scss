@@ -1,13 +1,13 @@
 body {
     display: grid;
     grid-template: 
-    "header aside" 217px
-    "main aside" auto
-    "footer footer" 150px /
+    "l-header l-aside" 217px
+    "l-main l-aside" auto
+    "l-footer l-footer" 150px /
     1fr 367px;
 }
 
-$areas: header, aside, main, footer;
+$areas: l-header, l-main, l-aside, l-footer;
  
 @each $area in $areas {
   .#{$area} {
@@ -16,7 +16,7 @@ $areas: header, aside, main, footer;
 }
 
 
-.l-header {
-    width: 100%;
+// .l-header {
+//     width: 100%;
     
-}
+// }

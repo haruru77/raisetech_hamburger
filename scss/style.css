@@ -93,30 +93,57 @@ input, select {
   vertical-align: middle;
 }
 
+.l-footer {
+  background-color: #9D8670;
+  height: 150px;
+  text-align: center;
+}
+
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: "header aside" 217px "main aside" auto "footer footer" 150px / 1fr 367px;
-}
-
-.header {
-  grid-area: header;
-}
-
-.aside {
-  grid-area: aside;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
+  grid-template: "l-header l-aside" 217px "l-main l-aside" auto "l-footer l-footer" 150px / 1fr 367px;
 }
 
 .l-header {
-  width: 100%;
+  grid-area: l-header;
+}
+
+.l-main {
+  grid-area: l-main;
+}
+
+.l-aside {
+  grid-area: l-aside;
+}
+
+.l-footer {
+  grid-area: l-footer;
+}
+
+.l-aside {
+  background-color: #F2EDE9;
+  color: #707070;
+}
+
+.c-contents-wrap {
+  width: 585px;
+  height: 174px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #3C2A10;
+  margin: 20px;
+}
+
+.c-contents-wrap__title {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.c-contents-wrap__content {
+  margin: 0 20px 0;
+  font-size: 1rem;
+  line-height: 1.3125;
 }
 
 .p-header {
@@ -131,7 +158,7 @@ body {
 }
 
 .p-header__left h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   color: #707070;
   line-height: 217px;
   margin-left: 65px;
@@ -146,11 +173,142 @@ body {
   width: 396px;
   height: 46px;
   border-radius: 10px;
+  border: 1px solid #707070;
 }
 
 .p-header__right__btn {
   width: 136px;
   height: 46px;
   border-radius: 10px;
+  font-size: 1rem;
+  background-color: #F2EDE9;
+}
+
+.p-main__top {
+  background-image: url(/img/top_img.png);
+  background-position: center;
+  width: auto;
+  height: 530px;
+}
+
+.p-main__top h2 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  padding-left: 86px;
+  line-height: 530px;
+}
+
+.p-main__contents-wrap {
+  margin-top: 120px;
+  margin-bottom: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.p-main__contents-wrap h3 {
+  font-size: 5rem;
+  color: #eaeaea;
+  padding: 50px 20px;
+}
+
+.p-main__contents-wrap__border {
+  margin: 0 20px;
+  width: 63px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.p-main__contents-wrap-left {
+  width: 625px;
+  height: 1125px;
+  background-image: url(/img/take_out.png);
+  position: relative;
+}
+
+.p-main__contents-wrap-left .p-main__contents-wrap__bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.p-main__contents-wrap-right {
+  width: 625px;
+  height: 1125px;
+  background-image: url(/img/eat_in.png);
+  position: relative;
+}
+
+.p-main__contents-wrap-right .p-main__contents-wrap__bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.p-main__bottom {
+  height: 649px;
+  background-image: url(/img/map.png);
+  background-position: left center;
+}
+
+.p-main__bottom__content {
+  max-width: 950px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.29);
+  color: #ffffff;
+}
+
+.p-main__bottom__content__title {
+  display: inline-block;
+  margin: 120px 0 50px 85px;
+  font-size: 2.25rem;
+}
+
+.p-main__bottom__content__border {
+  margin: 0 85px;
+  width: 75px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.p-main__bottom__content__text {
+  display: inline-block;
+  margin: 120px 85px;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.p-footer__name {
+  padding-top: 39px;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.p-footer__copyright {
+  padding-top: 35px;
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.p-aside__title {
+  padding: 82px 46px;
+}
+
+.p-aside__title h3 {
+  font-size: 2.125vw;
+}
+
+.p-aside__menu {
+  padding: 45px 46px 42px;
+  font-size: 1.5vw;
+}
+
+.p-aside__menu-list {
+  list-style: none;
+  font-size: 1.25vw;
+}
+
+.p-aside__menu-list li {
+  margin: 23px 66px;
 }
 /*# sourceMappingURL=style.css.map */

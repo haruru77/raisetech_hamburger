@@ -1,0 +1,17 @@
+.c-contents-wrap {
+    width: 585px;
+    height: 174px;
+    background-color: rgba(255,255,255, 0.8);
+    color: #3C2A10;
+    margin: 20px;
+    &__title {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    &__content {
+        margin: 0 20px 0;
+        font-size: 1rem;
+        line-height: 1.3125;
+    }
+}
