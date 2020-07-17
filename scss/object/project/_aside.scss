@@ -1,19 +1,42 @@
+
+
 .p-aside {
     &__title {
         padding: 82px 46px;
         h3 {
             font-size: 2.125vw;
+            @include mq("tab") {
+                display: none;
+            }
         }
     }
     &__menu {
         padding: 45px 46px 42px;
         font-size: 1.5vw;
+        @include mq("tab"){
+            font-size: 1.5rem;
+        }
     }
     &__menu-list {
         list-style: none;
         font-size: 1.25vw;
+        @include mq("tab"){
+            font-size: 1.25rem;
+        }
         & li {
-            margin: 23px 66px
+            margin: 23px 66px;
+        }
+    }
+    &__close {
+        display: none;
+        width: 32px;
+        height: 32px;
+        font-size: 2rem;
+        position: absolute;
+        top:25px;
+        right: 25px;
+        @include mq("tab") {
+           display: block;
         }
     }
 }

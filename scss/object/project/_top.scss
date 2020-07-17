@@ -3,10 +3,20 @@
     background-position: center;
     width: auto;
     height: 530px;
+    @include mq('tab'){
+        height: 285px;
+    }
     h2 {
         color:#FFFFFF;
         font-size: 2.5rem;
         padding-left: 86px;
         line-height: 530px;
+        @include mq('tab'){
+            font-size: 2.25rem;
+            line-height: 285px;
+        }
+        @include mq('sp'){
+            padding-left: 25px;
+        }
     }
 }

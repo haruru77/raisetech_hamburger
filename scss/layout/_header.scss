@@ -1,22 +1,53 @@
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  min-height: 100%;
+  .l-all-wrapper {
     display: grid;
-    grid-template: 
-    "l-header l-aside" 217px
-    "l-main l-aside" auto
-    "l-footer l-footer" 150px /
-    1fr 367px;
+    grid-template:
+      "l-header l-aside" 217px
+      "l-main l-aside" auto
+      "l-footer l-footer" 150px /
+      1fr 367px;
+    @include mq("tab") {
+      grid-template:
+        "l-header" 217px
+        "l-main" auto
+        "l-footer" 150px /
+        1fr;
+      .l-aside {
+        display: none;
+      }
+    }
+  }
 }
 
 $areas: l-header, l-main, l-aside, l-footer;
- 
+
 @each $area in $areas {
   .#{$area} {
     grid-area: #{$area};
   }
 }
 
-
-// .l-header {
-//     width: 100%;
-    
-// }
+.l-nav-close {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  // height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 5;
+}
