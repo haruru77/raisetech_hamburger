@@ -116,6 +116,7 @@ body {
 }
 
 body .l-all-wrapper {
+  position: relative;
   display: -ms-grid;
   display: grid;
   grid-template: "l-header l-aside" 217px "l-main l-aside" auto "l-footer l-footer" 150px / 1fr 367px;
